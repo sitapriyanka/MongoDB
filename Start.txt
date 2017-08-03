@@ -1,0 +1,28 @@
+create a folder db mongod --dbpath=D:\learn\Mongo
+
+open new command prompt and open mongo.exe
+it will automatically connect to db 
+
+//to connect to existing db or create a new db
+1) use mydb 
+ 
+// to list all dbs
+2)show dbs
+
+//to create a new document -- unitil we create atleast one document the database will not be saved
+3)db.movie.insert("name","e maya chesave")
+
+//to drop
+4)db.dropDatabase()
+
+5)db.createCollection("Employee"); -- Employee is the name of the collection
+
+6)db.Employee.insert({"Id":1,"Name":"X"}) --inserting single record -- if the collection name does not exist in database mongo db create a new collection and inserts into it
+
+7)db.Employee.insert([{"Id":2},{"Id":3}]) -- bulk insertion
+
+8)db.Employee.find() or db.Employee.find.pretty() -- to list all documents in a collection
+
+9)db.Employee.find({"Id",3})
+
+10)
